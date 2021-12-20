@@ -1,0 +1,173 @@
+* {
+	font-family: Corbel;
+	text-align: justified;
+	overflow: auto;
+	color: black;
+}
+
+body {
+	margin: 0px;
+	text-align: center;
+}
+
+header {
+	background-color: cyan;
+}
+
+article {
+	text-align: center;
+	padding: 0% 10%;
+	margin: 20px;
+}
+
+section {
+	text-align: center;
+	padding: 0% 10%;
+}
+
+section.box {
+	margin-top: 20px;
+	border: 10px solid black;
+	padding: 1%;
+}
+
+section.text {
+	width: 60%;
+	margin: 0 10%;
+}
+
+section > p {
+	text-align: justified;
+}
+
+a {
+	text-decoration: none;
+	vertical-align: bottom;
+	padding: 0px 60px;
+}
+
+#a1:link{
+	color: white;
+}
+
+#a1:visited {
+	color: white;
+}
+
+#a1:hover {
+	color: cyan;
+}
+
+#a1:active {
+	color: cyan;
+}
+
+#a2:link{
+	color: white;
+}
+
+#a2:visited {
+	color: white;
+}
+
+#a2:hover {
+	color: cyan;
+}
+
+#a2:active {
+	color: cyan;
+}
+
+#a3:link{
+	color: white;
+}
+
+#a3:visited {
+	color: white;
+}
+
+#a3:hover {
+	color: cyan;
+}
+
+#a3:active {
+	color: yellow;
+}
+
+#a4:link{
+	color: white;
+}
+
+#a4:visited {
+	color: white;
+}
+
+#a4:hover {
+	color: cyan;
+}
+
+#a4:active {
+	color: yellow;
+}
+
+#a5:link{
+	color: white;
+}
+
+#a5:visited {
+	color: white;
+}
+
+#a5:hover {
+	color: cyan;
+}
+
+#a5:active {
+	color: yellow;
+}
+
+
+nav {
+	border: 0px;
+	width: 100%;
+	background-color: black;
+	text-align: center;
+}
+
+nav > ul {
+	height: 22px;
+}
+
+nav > ul li {
+	background-color: black;
+	display: inline;
+	color: white;
+}
+
+aside {
+	display: block;
+	float: left;
+	margin: 0px;
+}
+
+img {
+	height: 150px;
+	width: 150px;
+	margin: 20px;
+}
+
+.current {
+	font-weight: bold;
+}
+
+.bar {
+	background-color: black;
+	width: 20%;
+	height: 10px;
+	margin: 10px 40%;
+}
+
+.bar#long{
+	width: 40%;
+	margin: 10px 30%;
+}
