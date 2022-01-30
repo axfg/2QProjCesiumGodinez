@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name = "author" content = "Anton Xavier F. Godinez">
+		<meta name = "keywords" content = "HTML,CSS,JavaScript,Calculator">
+		<meta name = "revised" content = "16-1-2022">
+		
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/last_3_pages_style.css">
+		
+		<title>BFT - Expenses Visualizer</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Basic Finance Tools</h1>
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a id = "a1" href = "../index.html">Home</a></li>
+				<li><a id = "a2" href = "about.html">About</a></li>
+				<li><a id = "a3" href = "savings_calculator.html">Savings Calculator</a></li>
+				<li><a id = "a4" href = "budget_helper.html">Budget Helper</a></li>
+				<li><a class = "current" id = "a5" href = "expense_visualizer.html">Expenses Visualizer</a></li>
+			</ul>
+		</nav>
+		
+		<h2>
+			Budget Calculator
+		</h2>
+		
+		<div class = "bar" id = "long"></div>
+
+		<h3>
+			Purpose and Recommended Use:
+		</h3>
+		
+		<p>
+			This is a tool which shows the distribution of expenses on different categories. It was built with monthly expenses in mind.
+		</p>
+		
+		<h3>
+			Instructions:
+		</h3>
+		
+		<p>
+			You will see a table with three colums.<br/>
+			One has a category name, the second has an input box to put the allocation in, and the last tracks the percentage of total allocations taken by that allocation.<br/>
+			Like the Budget Helper, you can add and delete categories at will.
+		</p>
+		
+		<div class = "bar"></div>
+		
+		<!--Hmmm...where did I last see this?-->
+		<table id = "main" style = "width: 75%; border: 1px solid black;">
+			<tr>
+				<th colspan = "3">Your Expenses</th>
+			</tr>
+			<tr>
+				<td colspan = "3">
+					Total: <span class = "output" id = "total"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Category Name
+				</td>
+				<td style = "padding: 0 50px;">Allocation <!--Padding is to lengthen Allocation box-->
+				</td>
+				<td> 
+					Percentage (%)
+				</td>
+			</tr>
+		</table>
+		<p>
+			<input type = "button" value = "Insert Row" onclick = "addRow();">		
+			<input type = "button" value = "Delete Last Row" onclick = "deleteRow();">
+		</p>
+		
+		<script src = "../scripts/exp_vis_script.js"></script>
+	</body>
+</html>

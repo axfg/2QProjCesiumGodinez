@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name = "author" content = "Anton Xavier F. Godinez">
+		<meta name = "keywords" content = "HTML,CSS,JavaScript,Calculator">
+		<meta name = "revised" content = "16-1-2022">
+		
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/last_3_pages_style.css">
+		
+		<title>BFT - Savings Calculator</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Basic Finance Tools</h1>
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a id = "a1" href = "../index.html">Home</a></li>
+				<li><a id = "a2" href = "about.html">About</a></li>
+				<li><a class = "current" id = "a3" href = "savings_calculator.html">Savings Calculator</a></li>
+				<li><a id = "a4" href = "budget_helper.html">Budget Helper</a></li>
+				<li><a id = "a5" href = "expense_visualizer.html">Expenses Visualizer</a></li>
+			</ul>
+		</nav>
+		
+		<h2>
+			Savings Calculator
+		</h2>
+		
+		<div class = "bar" id = "long"></div>
+
+		<h3>
+			Purpose and Recommended Use:
+		</h3>
+		
+		<p>
+			This is a simple interest calculator. Nothing special.
+		</p>
+		
+		<h3>
+			Instructions:
+		</h3>
+		
+		<p>
+			Simply select what type of interest to calculate and fill in the boxes with the appropriate values. <br/> 
+			The result will automatically update as you edit.
+		</p>
+		
+		<div class = "bar"></div>
+		
+		<h3>
+			Type of Interest:
+		</h3>
+		
+		<div class = "choice" style = "margin-bottom: 25px">
+			<a id = "simple" onclick = "chooseSimple()">Simple</a>
+			<a id = "complex" onclick = "chooseComplex()">Complex</a>
+		</div>
+
+
+		<h3>
+		<span class = "input"> 
+			Principal:
+			<input type = "number" id = "principal" min = "0" value = "0" step = "100"></input>
+			units
+		</span>
+		
+		<span class = "input">
+			Interest Rate:
+			<input type = "number" id = "intRate" min = "0" value = "0" step = "0.1"></input>
+			%
+		</span>
+		
+		<span class = "input">
+			Time Periods: 
+			<input type = "number" id = "periods" min = "0" value = "0" step = "1"></input>
+			periods
+		</span>
+		</h3>
+		
+		<input type = "button" value = "Compute"></input>
+		
+		<h3>
+			Results:
+		</h3>	
+		
+		New Balance: 
+		<span class = "output" id = "newBal"></span>
+		 units, Interest Gained: 
+		<span class = "output" id = "addInt"></span>
+		 units
+		
+		<script src = "../scripts/sav_calc_script.js"></script>
+	</body>
+</html>

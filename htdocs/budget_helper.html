@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name = "author" content = "Anton Xavier F. Godinez">
+		<meta name = "keywords" content = "HTML,CSS,JavaScript,Calculator">
+		<meta name = "revised" content = "16-1-2022">
+		
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/last_3_pages_style.css">
+		
+		<title>BFT - Budget Helper</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Basic Finance Tools</h1>
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a id = "a1" href = "../index.html">Home</a></li>
+				<li><a id = "a2" href = "about.html">About</a></li>
+				<li><a id = "a3" href = "savings_calculator.html">Savings Calculator</a></li>
+				<li><a class = "current" id = "a4" href = "budget_helper.html">Budget Helper</a></li>
+				<li><a id = "a5" href = "expense_visualizer.html">Expenses Visualizer</a></li>
+			</ul>
+		</nav>
+		
+		<h2>
+			Budget Calculator
+		</h2>
+		
+		<div class = "bar" id = "long"></div>
+
+		<h3>
+			Purpose and Recommended Use:
+		</h3>
+		
+		<p>
+			This is a tool that aims to subdivide budgets into smaller segments so that people do not overspend on certain categories. It was built with groceries in mind.
+		</p>
+		
+		<h3>
+			Instructions:
+		</h3>
+		
+		<p>
+			To start, specify the amount to be used in the entire budget. Then click the button below to create a budget. <br/>
+			You can create new categories and budgets, as well as adjust them.
+		</p>
+		
+		<div class = "bar"></div>
+		
+		<div id = "intro">
+			<h3>
+				To begin, dictate the given budget. This cannot be changed after it is set.
+			</h3>
+			<input type = "number" id = "budgetSetter" min = "0"></input>
+			<input type = "button" value = "Set Budget" onclick = "switchToTool();"></input>
+		</div>
+		
+		<div id = "tool">
+			<table id = "main" style = "width: 75%; border: 1px solid black;">
+				<tr>
+					<th colspan = "2">Your Budget</th>
+				</tr>
+				<tr>
+					<td colspan = "2">
+						Budget: <span class = "output" id = "budget"></span>
+						, Allocated: <span class = "output" id = "allocated"></span> (<span class = "output" id = "allocatedPercentage"></span> %)
+						, Remaining: <span class = "output" id = "remaining"></span> (<span class = "output" id = "remainingPercentage"></span> %)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Category Name
+					</td>
+					<td style = "padding: 0 80px;">Allocation <!--Padding is to lengthen Allocation box-->
+					</td>
+				</tr>
+			</table>
+			<p>
+				<input type = "button" value = "Insert Row" onclick = "addRow();">		
+				<input type = "button" value = "Delete Last Row" onclick = "deleteRow();">
+			</p>
+		</div>
+		
+		<script src = "../scripts/bgt_help_script.js"></script>
+	</body>
+</html>
