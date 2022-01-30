@@ -1,0 +1,50 @@
+/*
+General stylesheet for the last 3 webpages.
+Some are used by multiple pages, while others are specific to one.
+
+I forgot why I put these in a separate stylesheet.
+*/
+
+/*
+Used By Multiple Webpages
+*/
+
+span.output {
+	font-weight: bold;
+}
+
+table {
+	margin: 20px 10%;
+	width: 80%; 
+	border: 1px solid black;
+}
+			
+th, td {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+/*
+Savings Calculator Exclusive
+*/
+
+span.input {	
+	padding: 0px 50px;
+	border-width: 0px 5px;
+	border-style: solid;
+	border-color: black;
+}
+
+#simple {
+	background-color: cyan;
+	font-weight: bold;
+}
+
+/*
+Budget Calculator Exclusive
+*/
+
+#tool {
+	display: none;
+}
+
